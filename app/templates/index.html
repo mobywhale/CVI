@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Current Cvi is for the {{ cvi.project}} project</h1>
+    {% for line_item in line_items %}
+    <div><p> Line: {{ line_item.line_number}} <b> Item:{{ line_item.item }}</b></p></div>
+    <hr>
+    {% endfor %}
+{% endblock %}
